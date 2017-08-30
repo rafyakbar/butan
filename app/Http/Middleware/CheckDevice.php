@@ -3,6 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
+use Jenssegers\Agent\Agent as Agent;
 
 class CheckDevice
 {
@@ -15,6 +16,9 @@ class CheckDevice
      */
     public function handle($request, Closure $next)
     {
+        if ((new Agent())->isDesktop()){
+            return redirect('sorry');
+        }
         return $next($request);
     }
 }
