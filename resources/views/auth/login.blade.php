@@ -8,14 +8,16 @@
         {{ csrf_field() }}
         <div class="ui-field-contain">
             <label for="id">NIM</label>
-            <input type="text" name="id" id="id" required><br>
+            <input type="number" name="id" id="id" required>
             <label for="password">Password</label>
             <input type="password" name="password" id="password" required><br>
             <label for="chekbox">Ingat</label>
             <input type="checkbox" name="remember" id="chekbox">
         </div>
-        <input type="submit" value="masuk">
+        <input type="submit" value="Masuk">
     </form>
+
+    <p>Belum punya akun? buat <a href="{{ url('/register') }}">di sini</a></p>
 
     {{--<div class="container">--}}
         {{--<div class="row">--}}

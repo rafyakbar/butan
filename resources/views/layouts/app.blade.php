@@ -104,7 +104,7 @@ document.getElementById('logout-form').submit();">Keluar</a></li>
     </div>
 
     <div data-role="footer" data-position="fixed">
-        <h1>Copyright BuTan 2017</h1>
+        <h1>Copyright © 2017 BuTan. All Rights Reserved</h1>
     </div>
 </div>
 

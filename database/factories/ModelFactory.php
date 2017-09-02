@@ -16,9 +16,11 @@ $factory->define(App\User::class, function (Faker\Generator $faker) {
     static $password;
 
     return [
-        'name' => $faker->name,
+        'id' => $faker->isbn10,
+        'nama' => $faker->name,
         'email' => $faker->unique()->safeEmail,
         'password' => $password ?: $password = bcrypt('secret'),
+        'angkatan'=> rand(2009, (\Carbon\Carbon::now())->format('Y')),
         'remember_token' => str_random(10),
     ];
 });

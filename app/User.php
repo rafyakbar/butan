@@ -19,6 +19,8 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
+        'id_prodi',
+        'angkatan',
         'id',
         'nama',
         'email',
@@ -40,4 +42,14 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function prodi()
+    {
+        return $this->belongsTo('App\Prodi', 'id_prodi')->first();
+    }
+
+    public function postings()
+    {
+        return $this->hasMany('App\Postings');
+    }
 }
