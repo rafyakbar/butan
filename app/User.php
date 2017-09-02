@@ -9,13 +9,27 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    public $incrementing = false;
+
+    protected $keyType = 'string';
+
     /**
      * The attributes that are mass assignable.
      *
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'id',
+        'nama',
+        'email',
+        'password',
+        'tanggal_lahir',
+        'alamat_asal',
+        'alamat_tinggal',
+        'foto',
+        'jadawal_mk',
+        'created_at',
+        'updated_at'
     ];
 
     /**

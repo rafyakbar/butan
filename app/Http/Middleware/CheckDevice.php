@@ -16,7 +16,7 @@ class CheckDevice
      */
     public function handle($request, Closure $next)
     {
-        if ((new Agent())->isDesktop())
+        if ((new Agent())->isMobile())
             return redirect('sorry');
 
         return $next($request);

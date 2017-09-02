@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('sorry', function (){
     return view('sorry');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
