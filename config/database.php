@@ -1,5 +1,12 @@
 <?php
 
+$url = parse_url("postgres://vaxhvrohdyjpqf:5486644140f20cd5e615beeb0ca565cba96ec865ae56d03a8c0fbeb0888f5584@ec2-107-20-188-239.compute-1.amazonaws.com:5432/dc5md73nduep1n");
+
+$host = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$database = substr($url["path"], 1);
+
 return [
 
     /*
@@ -56,11 +63,11 @@ return [
 
         'pgsql' => [
             'driver' => 'pgsql',
-            'host' => 'ec2-54-163-254-143.compute-1.amazonaws.com',
+            'host' => $host,
             'port' => '5432',
-            'database' => 'dbs4sr5og1pa64',
-            'username' => 'szbaebhdcrvsfn',
-            'password' => '689c4732d5d724975e47ffc47f2e52b381dfc473be27f949f87ef8333ebf93a9',
+            'database' => $database,
+            'username' => $username,
+            'password' => $password,
             'charset' => 'utf8',
             'prefix' => '',
             'schema' => 'public',
