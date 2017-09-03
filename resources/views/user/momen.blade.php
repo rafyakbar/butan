@@ -11,7 +11,7 @@
             <label for="caption">Tulis captionmu</label>
             <textarea id="caption" name="caption"></textarea>
         </div>
-        <input type="submit" value="Bagikan">
+        <input type="submit" value="Bagikan" data-inline="true">
     </form>
     <p>Momen yang kamu bagikan akan muncul di halaman beranda</p>
 </div>
