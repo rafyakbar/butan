@@ -14,7 +14,7 @@
             <label for="konfirmasi">Konfirmasi Password</label>
             <input type="password" name="password_confirmation" id="konfirmasi" required>
         </div>
-        <input type="submit" value="Daftar">
+        <input type="submit" value="Daftar" data-inline="true">
     </form>
     <p>Sudah punya akun? masuk <a href="{{ url('/login') }}">di sini</a></p>
     {{--<form class="form-horizontal" method="POST" action="{{ route('register') }}">--}}

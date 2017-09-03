@@ -14,7 +14,7 @@
             <label for="chekbox">Ingat</label>
             <input type="checkbox" name="remember" id="chekbox">
         </div>
-        <input type="submit" value="Masuk">
+        <input type="submit" value="Masuk" data-inline="true">
     </form>
 
     <p>Belum punya akun? buat <a href="{{ url('/register') }}">di sini</a></p>

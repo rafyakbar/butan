@@ -9,6 +9,8 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    const JK = ['Pria','Wanita'];
+
     public $incrementing = false;
 
     protected $keyType = 'string';
@@ -20,11 +22,13 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'id_prodi',
-        'angkatan',
         'id',
+        'angkatan',
         'nama',
         'email',
         'password',
+        'no_telepon',
+        'jenis_kelamin',
         'tanggal_lahir',
         'alamat_asal',
         'alamat_tinggal',
