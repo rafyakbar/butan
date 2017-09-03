@@ -12,7 +12,6 @@
 
     {{--<!-- Styles -->--}}
     <link rel="stylesheet" href="{{ asset('css/jquery.mobile-1.4.5.min.css') }}">
-    {{--<link rel="stylesheet" href="{{ asset('css/app.css') }}">--}}
     <style>
         #profil_image {
             text-align: center;
@@ -23,7 +22,6 @@
 
     <script src="{{ asset('js/jquery-1.11.3.min.js') }}"></script>
     <script src="{{ asset('js/jquery.mobile-1.4.5.min.js') }}"></script>
-    <script src="{{ asset('js/my.js') }}"></script>
 </head>
 <body>
 <div data-role="page" id="halaman">
